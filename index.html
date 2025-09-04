@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>FINANCE TRACKER</h1>
+    </nav>
+  </header>
+  <br>
+  <h2>
+    Add Transaction
+  </h2>
+  <br>
+  <form id="transactionForm">
+    <table>
+      <tr class="first">
+        <td><label>Description:</label></td>
+        <td><input type="text" id="description" ></td>
+      </tr>
+      <tr>
+        <td><label>Amount:</label></td>
+        <td><input type="number" id="amount" step="0.01" required></td>
+      </tr>
+      <tr>
+        <td><label>Type:</label></td>
+        <td>
+          <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Category:</label></td>
+        <td>
+          <select id="category">
+            <option value="food">Food</option>
+            <option value="Salary">Salary</option>
+            <option value="Pocket Money">Pocket Money</option>
+            <option value="Bills">Bills</option>
+            <option value="Utilities">Utilities</option>
+            <option value="Others">Others</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Date:</label></td>
+        <td><input type="date" id="date" required></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit">Add Transaction</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <hr>
+
+  <h2>Summary</h2>
+  <table border="1">
+    <tr>
+      <td><strong>Total Income:</strong></td>
+      <td>₹<span id="totalIncome"></span></td>
+    </tr>
+    <tr>
+      <td><strong>Total Expenses:</strong></td>
+      <td>₹<span id="totalExpenses"></span></td>
+    </tr>
+    <tr>
+      <td><strong>Balance:</strong></td>
+      <td>₹<span id="balance"></span></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2>Transaction History</h2>
+  <button onclick="clearAllTransactions()">Clear All</button>
+  <br><br>
+
+  <table border="1" id="transactionTable">
+    <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Action</th>
+    </tr>
+  </table>
+
+  <p id="noTransactions">No transactions yet. Add your first transaction above!</p>
+<script src="new.js"></script>
+
+</body>
+
+</html>
