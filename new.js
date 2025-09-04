@@ -88,7 +88,7 @@
   typeCell.style.color = transaction.type === 'income' ? 'green' : 'red';
 
   const amountCell = row.insertCell(4);
-  amountCell.textContent = '$' + transaction.amount.toFixed(2);
+  amountCell.textContent = '₹' + transaction.amount.toFixed(2);
   amountCell.style.color = transaction.type === 'income' ? 'green' : 'red';
 
   const actionCell = row.insertCell(5);
