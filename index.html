@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finance Tracker</title>
-  <link rel="stylesheet" href="main.css"> 
+  <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
     <table>
       <tr class="first">
         <td><label>Description:</label></td>
-        <td><input type="text" id="description" required ></td>
+        <td><input type="text" id="description" required></td>
       </tr>
       <tr>
         <td><label>Amount:</label></td>
@@ -104,7 +104,11 @@
   </table>
 
   <p id="noTransactions">No transactions yet. Add your first transaction above!</p>
-<script src="new.js"></script>
+  <script src="new.js"></script>
+  <h2>Income vs Expense Chart</h2>
+  <canvas id="incomeExpenseChart" width="400" height="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 
