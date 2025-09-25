@@ -102,3 +102,12 @@ table[border] td {
   color: #888;
   font-style: italic;
 }
+incomeExpenseChart{
+      max-height: 400px;
+    display: flex;
+    box-sizing: border-box;
+    height: 400px;
+    width: 1520px;
+    align-items: center;
+    justify-content: center;
+}
