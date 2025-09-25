@@ -102,7 +102,7 @@ table[border] td {
   color: #888;
   font-style: italic;
 }
-incomeExpenseChart{
+.chart-container{
       max-height: 400px;
     display: flex;
     box-sizing: border-box;
