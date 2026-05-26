@@ -55,11 +55,6 @@ body {
   margin-bottom: 20px;
 }
 
-.style:hover {
-  background-color: lightgray;
-  cursor: pointer;
-}
-
 #login-button {
   border-radius: 5px;
   border-width: 2px;
