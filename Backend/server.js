@@ -15,7 +15,7 @@ const db = mysql.createConnection({
     host: "tramway.proxy.rlwy.net",
     port: 38352,
     user: "root",
-    password: "YOUR_PASSWORD",
+    password: "knjIudDBrCdsTXgLjBeBLqWYoOqqHbpV",
     database: "railway",
     ssl: {
         rejectUnauthorized: false
