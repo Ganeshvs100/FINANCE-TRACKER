@@ -12,7 +12,7 @@ app.use(express.static("public"));
 /* MYSQL CONNECTION */
 
 const db = mysql.createConnection({
-    host: "mysql-gszg.railway.internal",
+    host: "mysql://root:knjIudDBrCdsTXgLjBeBLqWYoOqqHbpV@tramway.proxy.rlwy.net:38352/railway",
     user: "root",
     password: "knjIudDBrCdsTXgLjBeBLqWYoOqqHbpV",
     database: "railway"
