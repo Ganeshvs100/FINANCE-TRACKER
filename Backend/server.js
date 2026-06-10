@@ -12,10 +12,10 @@ app.use(express.static("public"));
 /* MYSQL CONNECTION */
 
 const db = mysql.createConnection({
-    host: "localhost",
+    host: "mysql-gszg.railway.internal",
     user: "root",
-    password: "Ganeshvs@2006",
-    database: "FINANCE_TRACKER"
+    password: "knjIudDBrCdsTXgLjBeBLqWYoOqqHbpV",
+    database: "railway"
 });
 
 db.connect((err) => {
