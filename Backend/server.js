@@ -13,9 +13,13 @@ app.use(express.static("public"));
 
 const db = mysql.createConnection({
     host: "tramway.proxy.rlwy.net",
+    port: 38352,
     user: "root",
-    password: "knjIudDBrCdsTXgLjBeBLqWYoOqqHbpV",
-    database: "railway"
+    password: "YOUR_PASSWORD",
+    database: "railway",
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 db.connect((err) => {
