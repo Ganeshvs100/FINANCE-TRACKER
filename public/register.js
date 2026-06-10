@@ -8,7 +8,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
         password: document.getElementById("password").value
     };
 
-    const response = await fetch("http://localhost:3000/register", {
+const response = await fetch("https://finance-tracker-xwh5.onrender.com/register", {
 
         method: "POST",
         headers: {
