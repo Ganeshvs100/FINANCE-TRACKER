@@ -10,7 +10,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
     try {
 
-        const response = await fetch("http://localhost:3000/login", {
+        const response = await fetch("https://finance-tracker-xwh5.onrender.com/login", {
 
             method: "POST",
 
