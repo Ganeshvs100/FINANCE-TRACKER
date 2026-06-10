@@ -19,7 +19,7 @@ transaction_date:document.getElementById("date").value,
 
 try{
 
-const response=await fetch("http://localhost:3000/addTransaction",{
+const response = await fetch("https://finance-tracker-xwh5.onrender.com/addTransaction", {
 
 method:"POST",
 
@@ -217,7 +217,7 @@ async function loadTransactions(){
 
 try{
 
-const response=await fetch("http://localhost:3000/transactions");
+const response = await fetch("https://finance-tracker-xwh5.onrender.com/transactions");
 
 const data=await response.json();
 
