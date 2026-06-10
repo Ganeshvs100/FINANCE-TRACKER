@@ -20,7 +20,7 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
     if (err) {
-        console.log("Database connection failed");
+        console.error("Database connection failed:", err);
     } else {
         console.log("Connected to MySQL");
     }
@@ -121,6 +121,8 @@ app.get("/transactions", (req, res) => {
         }
     });
 });
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
